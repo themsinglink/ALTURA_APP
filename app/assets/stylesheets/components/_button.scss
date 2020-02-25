@@ -8,6 +8,16 @@
   color: white;
 }
 
+.form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h2 {
+  text-align: center;
+}
+
 .btn-custom-login {
   background: white;
   border-radius: 5px;
