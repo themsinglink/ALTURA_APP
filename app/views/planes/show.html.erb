@@ -1,3 +1,5 @@
+<div class="showpage">
+
 <div class="navbar">
   <div class="logo">
     <h1><a href="#">ALTURA</a></h1>
@@ -33,35 +35,39 @@
   <div class="icons">
     <div class="firsticons">
     <div class="capacity">
-      <img src="" alt="">
-      <p><%= @plane.capacity %></p>
+      <%= image_tag "user.png", class: "icon", alt: "alttext" %>
+      <p><%= @plane.capacity %> Passengers</p>
     </div>
     <div class="name">
-      <img src="plane.png" alt="plane icon">
-      <p><%= @plane.name %></p>
+      <%= image_tag "plane.png", class: "icon", alt: "alttext" %>
+      <p>Nextant 400XTi</p>
     </div>
     </div>
     <div class="secondicons">
       <div class="pilot">
-      <img src="pilot.png" alt="pilot icon">
+      <%= image_tag "pilot.png", class: "icon", alt: "alttext" %>
       <p><%= @plane.pilot_name %></p>
     </div>
     <div class="location">
-      <img src="pin.png" alt="pin icon">
+      <%= image_tag "pin.png", class: "icon", alt: "alttext" %>
       <p><%= @plane.location %></p>
     </div>
     </div>
   </div>
+  <div class="description">
+    <p><%= @plane.description %></p>
+  </div>
 </div>
 
 <div class="right">
-  <div class="content">
+  <div class="rightcontent">
+    <h2>New bookings</h2>
     <div class="user">
-      <img src="user.png" alt="user icon">
+      <%= image_tag "laura.png", class: "avatar", alt: "alttext" %>
       <p>Laura Aunion</p>
     </div>
     <div class="message">
-      <p>Hi Katy! I would like to book your jet to Beijeng on the 24th at 2pm. My number is 203-393-234!</p>
+      <p>Hi Katy! I would like to book your jet to Beijing on the 24th at 2pm. My number is 203-393-234!</p>
     </div>
     <div class="button-green">
       <a href="#">Approve</a>
@@ -70,6 +76,7 @@
 
 </div>
 
+</div>
 </div>
 
 
