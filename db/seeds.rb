@@ -24,8 +24,8 @@ puts "#{User.count} users created."
 
 # puts 'Creating airplanes'
 
-# plane_1 = Plane.create(capacity: 10, location: "Rio de Janeiro", type: "Boing 123", pilot_name: "Bruce", rate: 1000, description: "super stylish vintage model", user_id: 1 )
-# plane_2 = Plane.create(capacity: 6, location: "Tokyo", type: "Airbus 333", pilot_name: "Leslie", rate: 1500, description: "futuristic look", user_id: 2 )
+# plane_1 = Plane.create(capacity: 10, location: "Rio de Janeiro", name: "Boing 123", pilot_name: "Bruce", rate: 1000, description: "super stylish vintage model", user: user_1 )
+# plane_2 = Plane.create(capacity: 6, location: "Tokyo", type: "Airbus 333", pilot_name: "Leslie", rate: 1500, description: "futuristic look", user: user_2 )
 
 # puts "#{Plane.count} planes created."
 
