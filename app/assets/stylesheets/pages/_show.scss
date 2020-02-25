@@ -1,0 +1,179 @@
+.showpage {
+  background-color: white;
+}
+
+body {
+  background: white;
+}
+
+.content {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+
+.content h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 35px;
+  color: #302F2F;
+}
+
+.content p {
+  font-family: Montserrat;
+  font-weight:200px;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.rightcontent {
+  padding: 18px 0px 25px 50px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 89%;
+  margin-right: 0;
+  padding-right: 0px;
+}
+
+.rightcontent h2 {
+  font-size: 20px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 70%;
+  background-color: #F4F4F4;
+  border-radius: 10px;
+  margin-right: 10%;
+
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user p {
+  margin-top: 12px;
+  color: #424242;
+}
+
+.user img {
+  margin: 13px;
+}
+
+.description {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.description p {
+  font-weight: 200;
+}
+
+.message p {
+  font-weight: 200;
+}
+
+.capacity {
+  display: flex;
+  margin-right: 10px;
+}
+
+.name {
+  display: flex;
+}
+
+.pilot {
+  display: flex;
+}
+
+.location {
+  display: flex;
+}
+
+.button-green {
+  border-radius: 5px;
+  background-color: #49C396;
+  padding: 8px 28px;
+  transition: all .3s ease 0s;
+  width: 300px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.button-green a {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 37px;
+  text-decoration: none;
+  letter-spacing: 1.12px;
+  font-weight: 500;
+  font-family: Montserrat;
+  color: #ffffff;
+}
+
+.button-green:hover {
+  opacity: .7;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+  margin-top: 5px;
+}
+
+.icons {
+  margin-left: 10px;
+  display: flex;
+}
+
+.icons p {
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-weight: 200px;
+
+}
+
+.secondicons p {
+  margin-bottom: 0px;
+}
+
+.firsticons {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.secondicons {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.firsticons {
+  margin-bottom: 10px;
+}
+
+.left h2 {
+  margin-bottom: 15px;
+}
+
+
