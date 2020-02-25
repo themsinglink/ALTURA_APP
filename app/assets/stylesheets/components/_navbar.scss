@@ -1,12 +1,41 @@
-.navbar-lewagon {
+.navbar {
+  display: flex;
   justify-content: space-between;
-  background: white;
+  align-items: center;
+  padding: 20px 10%;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.navbar a {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  color: #49C396;
+  cursor: pointer;
+  transition: all .3s ease 0s;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar a:hover {
+  opacity: .7;
+}
+
+.logo a {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.15em;
+}
+
+.links a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }

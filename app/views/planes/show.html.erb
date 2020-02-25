@@ -1,15 +1,21 @@
-<p id="notice"><%= notice %></p>
+<div class="navbar">
+  <div class="logo">
+    <h1><a href="#">ALTURA</a></h1>
+  </div>
+  <div class="links">
+    <a href="#">LOGOUT</a>
+  </div>
+</div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @plane.name %>
-  <%= @plane.location %>
-  <%= @plane.pilot_name %>
-  <%= @plane.description %>
-  <%= @plane.rate %>
-  <%= @plane.capacity %>
 
-</p>
+<% if @plane.photo.attached?  %>
+<div class="banner-photo" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path @plane.photo.key %>);">
+</div>
+<% else %>
+<div class="banner-photo" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= "https://source.unsplash.com/random?sig=#{rand(1..1000)}&?jet" %>);">
+</div>
+<% end %>
+
 
 <p>
   <strong>User:</strong>
@@ -18,4 +24,53 @@
 
 <%= cl_image_tag @plane.photo.key, height: 300, width: 400, crop: :fill %>
 
-<%= link_to 'Back', planes_path %>
+
+
+<div class="content">
+
+<div class="left">
+  <h2>Really amazing jet</h2>
+  <div class="icons">
+    <div class="firsticons">
+    <div class="capacity">
+      <img src="" alt="">
+      <p><%= @plane.capacity %></p>
+    </div>
+    <div class="name">
+      <img src="plane.png" alt="plane icon">
+      <p><%= @plane.name %></p>
+    </div>
+    </div>
+    <div class="secondicons">
+      <div class="pilot">
+      <img src="pilot.png" alt="pilot icon">
+      <p><%= @plane.pilot_name %></p>
+    </div>
+    <div class="location">
+      <img src="pin.png" alt="pin icon">
+      <p><%= @plane.location %></p>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="right">
+  <div class="content">
+    <div class="user">
+      <img src="user.png" alt="user icon">
+      <p>Laura Aunion</p>
+    </div>
+    <div class="message">
+      <p>Hi Katy! I would like to book your jet to Beijeng on the 24th at 2pm. My number is 203-393-234!</p>
+    </div>
+    <div class="button-green">
+      <a href="#">Approve</a>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+
+

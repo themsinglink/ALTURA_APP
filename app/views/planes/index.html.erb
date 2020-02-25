@@ -1,1 +1,32 @@
- <%= link_to "New plane", new_plane_path %>
+
+
+<div class="banner" style="background-image: linear-gradient(180deg, rgba(35, 70, 57, 0.24) 99.99%, rgba(255, 255, 255, 0) 100%), url(https://files.slack.com/files-pri/T02NE0241-FU3D8TTRQ/rosalia_b_w.png);">
+  <div class="navbar">
+  <div class="logo">
+    <h1><a href="#" style ="color: white;">ALTURA</a></h1>
+  </div>
+  <div class="links">
+    <a href="#"style ="color: white;">LOGOUT</a>
+  </div>
+</div>
+  <div class="banner-content container text-left" style= "margin: 10%;">
+      <h1>Fly High</h1>
+      <p>Book private jets to any destination.</p>
+      <%= link_to "List a plane", new_plane_path, class: 'btn btn-success' %>
+  </div>
+</div>
+<h2 class="container">Available near me</h2>
+<div class= 'planes-container container'>
+    <% @planes.each do |plane| %>
+      <div class="card-trip">
+        <img src="https://source.unsplash.com/featured/?planes" />
+          <div class="card-trip-infos">
+              <div>
+                  <h2><%= link_to plane.name, plane_path(plane) %></h2>
+                  <p> <%= link_to plane.description, plane_path(plane) %> </p>
+              </div>
+                 <h2 class="card-trip-pricing"> $ <%= plane.rate %> </h2>
+          </div>
+        </div>
+    <% end %>
+  </div>
