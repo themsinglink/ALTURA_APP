@@ -5,19 +5,18 @@
 
 </div>
 
-<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://images.unsplash.com/photo-1544016768-982d1554f0b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);">
-  <div class="banner-content">
-
+<div class="banner" style="background-image: linear-gradient(180deg, rgba(35, 70, 57, 0.24) 99.99%, rgba(255, 255, 255, 0) 100%), url(https://files.slack.com/files-pri/T02NE0241-FU4BE1NM9/screen_shot_2020-02-25_at_12.55.15_pm.png);">
+  <div class="banner-content container text-left" style= "margin: 20%;">
       <h1>Fly High</h1>
       <p>Book private jets to any destination.</p>
       <%= link_to "List a plane", new_plane_path, class: 'btn btn-success' %>
   </div>
 </div>
-<h2>Available near me</h2>
-<div class= 'planes-container'>
+<h2 class="container">Available near me</h2>
+<div class= 'planes-container container'>
     <% @planes.each do |plane| %>
       <div class="card-trip">
-        <img src="https://source.unsplash.com/featured/?plane" />
+        <img src="https://source.unsplash.com/featured/?planes" />
           <div class="card-trip-infos">
               <div>
                   <h2><%= link_to plane.name, plane_path(plane) %></h2>
@@ -27,4 +26,4 @@
           </div>
         </div>
     <% end %>
-</div>
+  </div>
