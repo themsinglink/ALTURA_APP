@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 2020_02_24_162324) do
   create_table "planes", force: :cascade do |t|
     t.integer "capacity"
     t.string "location"
-    t.string "type"
+    t.string "name"
     t.string "pilot_name"
     t.float "rate"
     t.text "description"

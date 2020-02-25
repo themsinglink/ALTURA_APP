@@ -3,7 +3,7 @@ class CreatePlanes < ActiveRecord::Migration[5.2]
     create_table :planes do |t|
       t.integer :capacity
       t.string :location
-      t.string :type
+      t.string :name
       t.string :pilot_name
       t.float :rate
       t.text :description
