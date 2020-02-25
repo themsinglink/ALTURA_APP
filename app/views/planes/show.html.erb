@@ -16,4 +16,6 @@
   <%= @plane.user %>
 </p>
 
+<%= cl_image_tag @plane.photo.key, height: 300, width: 400, crop: :fill %>
+
 <%= link_to 'Back', planes_path %>
