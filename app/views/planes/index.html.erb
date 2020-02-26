@@ -22,7 +22,7 @@
 <div class= 'planes-container container'>
     <% @planes.each do |plane| %>
       <div class="card-trip">
-        <img src="https://source.unsplash.com/featured/?planes" />
+        <%= cl_image_tag plane.photo.key %>
           <div class="card-trip-infos">
               <div>
                   <h2><%= link_to plane.name, plane_path(plane) %></h2>
