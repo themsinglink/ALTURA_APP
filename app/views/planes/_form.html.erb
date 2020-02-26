@@ -3,7 +3,7 @@
 <h2>Tell us about your plane</h2>
 <div class="formcontainer">
 
-<%= simple_form_for(@plane) do |f| %>
+<%= simple_form_for(plane) do |f| %>
 <div class="d-flex form-inputs">
   <span><%= f.input :rate %></span>
   <span><%= f.input :pilot_name %></span>
@@ -13,9 +13,6 @@
   <span><%= f.input :location %></span>
   <span><%= f.input :capacity %></span>
 </div>
-
-
-
 
   <div class="description-inputs">
   <%= f.input :description %>
