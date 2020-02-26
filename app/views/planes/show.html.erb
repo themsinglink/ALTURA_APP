@@ -66,8 +66,8 @@
         <div class="from">
           <p>From</p>
           <div class="bookingfrom">
-            <img src="" alt="">
-            <img src="" alt="">
+            <%= image_tag "time.png", class: "icon", alt: "alttext" %>
+            <%= image_tag "date.png", class: "icon", alt: "alttext" %>
           </div>
           <%#= simple_form_for @booking do |f| %>
           <%#= f.input :enter_date, as: :date, start_year: Date.today.year, order: [:day, :month, :year], html5: true %>
@@ -76,9 +76,10 @@
         <div class="to">
           <p>To</p>
             <div class="bookingto">
-            <img src="" alt="">
-            <img src="" alt="">
+            <%= image_tag "time.png", class: "icon", alt: "alttext" %>
+            <%= image_tag "date.png", class: "icon", alt: "alttext" %>
           </div>
+
 
         </div>
       </div>
