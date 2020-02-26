@@ -14,6 +14,11 @@
   transition: all .3s ease 0s;
 }
 
+.navbar-white a{
+  color: white;
+  background-color: transparent;
+}
+
 .navbar a:hover {
   opacity: .7;
 }
@@ -25,13 +30,26 @@
   letter-spacing: 0.15em;
 }
 
+.logo h1 {
+  padding-top: 0px;
+  margin-top: 0px;
+}
 .links a {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 29px;
   letter-spacing: 0.05em;
+}
+
+.links ul {
+  list-style: none;
+}
+
+.links li {
+  display: inline-block;
+  padding: 0 20px;
 }
 
 * {
