@@ -10,21 +10,7 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
-    <% if current_page?('/planes') || current_page?('/') %>
-    <div class="navbar navbar-white">
-  <div class="logo">
-    <p><%= link_to("ALTURA", "/planes")%></p>
-  </div>
-  <div class="links">
-    <% if current_user %>
-      <ul>
-      <li><%= link_to("BOOKINGS", plane_path(Plane.find_by(user: current_user)))%></li>
-      <li><%= link_to("LOG OUT", destroy_user_session_path)%></li>
-      </ul>
-    <% end %>
-  </div>
-</div>
-  <% else %>
+    <% if !current_page?('/planes') && !current_page?('/') && current_page?("users/sign_in") %>
   <div class="navbar">
   <div class="logo">
     <p><%= link_to("ALTURA", "/planes")%></p>
@@ -33,7 +19,7 @@
     <% if current_user %>
       <ul>
       <li><%= link_to("BOOKINGS", plane_path(Plane.find_by(user: current_user)))%></li>
-      <li><%= link_to("LOG OUT", destroy_user_session_path)%></li>
+      <li><%= link_to "LOG OUT", destroy_user_session_path, :method => :delete %></li>
       </ul>
     <% end %>
   </div>
@@ -41,7 +27,6 @@
 <% end %>
     <%= yield %>
     <%= javascript_include_tag 'application' %>
-
     <%= javascript_pack_tag 'application' %>
   </body>
 </html>
