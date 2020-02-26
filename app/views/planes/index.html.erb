@@ -18,6 +18,7 @@
 <div class= 'planes-container container'>
     <% @planes.each do |plane| %>
       <div class="card-trip">
+    <%= link_to plane_path(plane) do %>
         <img src="https://source.unsplash.com/featured/?planes" />
           <div class="card-trip-infos">
               <div>
@@ -29,5 +30,6 @@
 
           <!-- adds a comment so we can push -->
         </div>
+        <% end %>
     <% end %>
   </div>
