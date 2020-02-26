@@ -20,23 +20,35 @@
       <%= link_to "List a plane", new_plane_path, class: 'btn btn-success' %>
   </div>
 </div>
-<h2 class="container">Available near me</h2>
+<h2 class="container" class="font-change">Available near me</h2>
 <div class= 'planes-container container'>
     <% @planes.each do |plane| %>
+
+
+
       <div class="card-trip">
         <%= link_to plane_path(plane) do %>
+
+        <% if plane.photo.attached? %>
         <%= cl_image_tag plane.photo.key %>
+        <% else %>
+        <img src="https://source.unsplash.com/random?sig=#{rand(1..1000)}&?jet" alt="">
+        <% end %>
+
           <div class="card-trip-infos">
               <div>
                   <h2><%= plane.name%></h2>
                   <p> <%= plane.description%> </p>
               </div>
-                 <h2 class="card-trip-pricing"> $ <%= plane.rate %> </h2>
+                 <h2 class="card-trip-pricing"> $<%= plane.rate %></h2>
           </div>
         <% end %>
         </div>
     <% end %>
   </div>
+
+
+
 
 
 
