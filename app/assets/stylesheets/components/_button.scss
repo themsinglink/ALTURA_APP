@@ -56,3 +56,55 @@ h2 {
   transition-property: box-shadow;
 }
 
+.mainbutton {
+  border-radius: 5px;
+  background-color: #49C396;
+  color: #ffffff;
+  padding: 16px 28px;
+  transition: background 0.3s ease;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 1.12px;
+  margin-top: 22px;
+  transition: all .3s ease 0s;
+}
+
+.mainbutton:hover {
+  opacity: .8;
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+  color: white;
+}
+
+.mainbutton a {
+  text-decoration: none;
+}
+
+.mainbutton a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.font-change h2 {
+  font-size: 22px;
+  font-weight: 500px;
+  margin-bottom: 10px;
+}
+
+.banner-content h1 {
+   margin-bottom: 18px;
+}
+
+.text-change p {
+   padding-bottom: 12px;
+   opacity: 0;
+   color: white;
+   font-weight: 700px;
+}
+
+.banner-content h1 {
+  font-size: 40px;
+}
+
+
