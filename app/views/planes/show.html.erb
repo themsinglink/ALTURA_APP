@@ -71,13 +71,19 @@
 <div class="right">
   <div class="rightcontent">
     <h2>Add details</h2>
-    <div class="user">
-      <%= image_tag "laura.png", class: "avatar", alt: "alttext" %>
-      <p>x</p>
-    </div>
-    <div class="message">
-      <p>x</p>
-    </div>
+      <div class="calendar">
+        <div class="from">
+          <p>From</p>
+          <%#= simple_form_for @booking do |f| %>
+          <%#= f.input :enter_date, as: :date, start_year: Date.today.year, order: [:day, :month, :year], html5: true %>
+          <%# end %>
+
+        </div>
+        <div class="to">
+          <p>To</p>
+
+        </div>
+      </div>
     <div class="button-green">
       <a href="#">View Prices</a>
     </div>
