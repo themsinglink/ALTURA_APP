@@ -8,15 +8,20 @@
   color: white;
 }
 
+.container-body {
+h2 {
+  text-align: center;
+  }
+  a{
+    color: white;
+  }
+}
 .form-actions {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-h2 {
-  text-align: center;
-}
 
 .btn-custom-login {
   background: white;
@@ -50,9 +55,4 @@ h2 {
   transition: all 0.2s ease-in;
   transition-property: box-shadow;
 }
-
-a {
-  color: white;
-}
-
 
