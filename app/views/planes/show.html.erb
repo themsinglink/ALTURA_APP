@@ -12,7 +12,7 @@
 <div class="content">
 
 <div class="left">
-  <h2>Really amazing jet</h2>
+  <h2>Premium Jet Features</h2>
   <div class="icons">
     <div class="firsticons">
     <div class="capacity">
@@ -38,6 +38,9 @@
   <div class="description">
     <p><%= @plane.description %></p>
   </div>
+  <div class="rate">
+    <p>Hourly rate: <%= @plane.rate.to_i %>$</p>
+  </div>
 </div>
 
 
@@ -61,7 +64,7 @@
 <% else %>
 <div class="right">
   <div class="rightcontent">
-    <h2>Add details</h2>
+    <h2>Request Booking</h2>
       <div class="calendar">
         <div class="from">
           <p>From</p>
@@ -84,7 +87,7 @@
         </div>
       </div>
     <div class="button-green">
-      <a href="#">View Prices</a>
+      <a href="#">Submit</a>
     </div>
   </div>
 
