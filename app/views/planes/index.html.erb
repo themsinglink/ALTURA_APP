@@ -6,7 +6,9 @@
   <div class="links">
     <% if current_user %>
       <ul>
-      <li><%= link_to("BOOKINGS", plane_path(Plane.find_by(user: current_user)))%></li>
+     <% if current_user.planes.any? %>
+            <li><%= link_to("BOOKINGS", plane_path(Plane.find_by(user: current_user)))%></li>
+        <% end %>
       <li><%= link_to "LOG OUT", destroy_user_session_path, :method => :delete %></li>
       </ul>
     <% end %>
@@ -22,14 +24,16 @@
 <div class= 'planes-container container'>
     <% @planes.each do |plane| %>
       <div class="card-trip">
+        <%= link_to plane_path(plane) do %>
         <%= cl_image_tag plane.photo.key %>
           <div class="card-trip-infos">
               <div>
-                  <h2><%= link_to plane.name, plane_path(plane) %></h2>
-                  <p> <%= link_to plane.description, plane_path(plane) %> </p>
+                  <h2><%= plane.name%></h2>
+                  <p> <%= plane.description%> </p>
               </div>
                  <h2 class="card-trip-pricing"> $ <%= plane.rate %> </h2>
           </div>
+        <% end %>
         </div>
     <% end %>
   </div>
