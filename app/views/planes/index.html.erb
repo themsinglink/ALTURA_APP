@@ -14,29 +14,41 @@
     <% end %>
   </div>
 </div>
-  <div class="banner-content container text-left" style= "margin: 10%;">
-      <h1>Fly High</h1>
-      <p>Book private jets to any destination.</p>
-      <%= link_to "List a plane", new_plane_path, class: 'btn btn-success' %>
+  <div class="banner-content container text-left text-change" style= "margin: 5%; margin-left: 13%;">
+      <h1 style= "font-size: 60px;">Fly High</h1>
+      <p style= "font-weight: 300; color: white; opacity: 1;">Book private jets to any destination.</p>
+      <%= link_to "List a plane", new_plane_path, class: 'mainbutton' %>
   </div>
 </div>
-<h2 class="container">Available near me</h2>
+<h2 class="container font-change">Available near me</h2>
 <div class= 'planes-container container'>
     <% @planes.each do |plane| %>
+
+
+
       <div class="card-trip">
         <%= link_to plane_path(plane) do %>
+
+        <% if plane.photo.attached? %>
         <%= cl_image_tag plane.photo.key %>
+        <% else %>
+        <img src="https://source.unsplash.com/random?sig=#{rand(1..1000)}&?jet" alt="">
+        <% end %>
+
           <div class="card-trip-infos">
               <div>
                   <h2><%= plane.name%></h2>
                   <p> <%= plane.description%> </p>
               </div>
-                 <h2 class="card-trip-pricing"> $ <%= plane.rate %> </h2>
+                 <h2 class="card-trip-pricing"> $<%= plane.rate %></h2>
           </div>
         <% end %>
         </div>
     <% end %>
   </div>
+
+
+
 
 
 
