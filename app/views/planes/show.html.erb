@@ -1,14 +1,5 @@
 <div class="showpage">
 
-<div class="navbar">
-  <div class="logo">
-    <h1><a href="#">ALTURA</a></h1>
-  </div>
-  <div class="links">
-    <a href="#">LOGOUT</a>
-  </div>
-</div>
-
 
 <% if @plane.photo.attached?  %>
 <div class="banner-photo" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path @plane.photo.key %>);">
@@ -73,13 +64,20 @@
       <div class="calendar">
         <div class="from">
           <p>From</p>
+          <div class="bookingfrom">
+            <img src="" alt="">
+            <img src="" alt="">
+          </div>
           <%#= simple_form_for @booking do |f| %>
           <%#= f.input :enter_date, as: :date, start_year: Date.today.year, order: [:day, :month, :year], html5: true %>
           <%# end %>
-
         </div>
         <div class="to">
           <p>To</p>
+            <div class="bookingto">
+            <img src="" alt="">
+            <img src="" alt="">
+          </div>
 
         </div>
       </div>
