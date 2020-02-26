@@ -3,12 +3,9 @@
   text-align: center;
   height: 600px;
   background-repeat: no-repeat;
-  /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
   margin-bottom: 32px;
+  background-image:linear-gradient(180deg, rgba(35, 70, 57, 0.24) 99.99%, rgba(255, 255, 255, 0) 100%), image-url('Rosalia_B&W.png');
 }
 .banner h1 {
   font-size: 50px;
