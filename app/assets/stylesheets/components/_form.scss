@@ -9,13 +9,12 @@
   padding-top: 40px;
   padding-bottom: 40px;
   border-radius: 4px;
-  text-align: center;
   color: white;
-  font-family: Monsterrat;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: 400;
-  font-size: 21.1006px;
-  margin-top: 40px;
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: -12px;
 
 }
 
@@ -28,19 +27,21 @@
   justify-content: center;
 
   }
+  .pagecontainer h2{
+    margin-bottom: 22px;
+    font-weight: 600;
+    text-align: center;
+  }
 
 
-
-.pagecontainer h2{
-  margin-bottom: 15px;
-  font-family: Monsterrat;
+.formcontainer h2 {
+  font-family: Montserrat;
 }
 
 .horizontal-inputs {
-display: inline-block;
-margin:10px;
+  display: inline-block;
+  font-family: Montserrat;
 }
-
 
 span {
   padding: 0 5px;
@@ -48,17 +49,17 @@ span {
 
 
 .description-inputs{
-  margin-right: 15px
+  margin-right: 15px;
 }
 
 .btn-create{
   background: white;
   border-radius: 5px;
-  padding: 10px 25px;
+  padding: 10px 45px;
   color: #49C396;
   opacity: 0.9;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
   width: 300px;
   font-size: 21.1006px;
 
