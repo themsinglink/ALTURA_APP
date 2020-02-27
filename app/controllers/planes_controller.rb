@@ -7,6 +7,7 @@ class PlanesController < ApplicationController
 
   def show
     @plane = Plane.find(params[:id])
+    @booking = Booking.new
   end
 
   def new
@@ -17,7 +18,7 @@ class PlanesController < ApplicationController
     @plane = Plane.new(plane_params)
     @plane.user = current_user
     if @plane.save
-      redirect_to plane_path(@plane)
+    # redirect_to plane_path(@plane)
     else
       render :new
     end
