@@ -18,7 +18,8 @@ class PlanesController < ApplicationController
     @markers = @planes.map do |plane|
       {
         lat: plane.latitude,
-        lng: plane.longitude
+        lng: plane.longitude,
+        image_url: helpers.asset_url('plane.png')
       }
   end
 end
