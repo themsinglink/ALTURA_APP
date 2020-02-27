@@ -1,26 +1,47 @@
 <div class="pagecontainer">
+  <div class="booking-form-container">
 
-<h2>Message owner</h2>
-<div class="formcontainer">
+  <h2>Message owner</h2>
 
-<%= simple_form_for(@booking) do |f| %>
+    <%= simple_form_for(@booking) do |f| %>
 
-<div class="description-inputs">
-  <%= f.input :message, label: " Message owner", placeholder: 'Hi, I am interested in...' %></span>
+      <div class="message-input">
+        <%= f.input :message, class: "message-input", placeholder: 'Hi, I am interested in...', label: false %></span>
+      </div>
+
+    <% end %>
+
+    <div class="message-container">
+      <form >
+        <p>Card details</p>
+        <input type="card number" placeholder="Card Number">
+        <input type="expiry" placeholder="Expiryy">
+        <input type="CVV" placeholder="CVV">
+        <input type="Card Holder Name"  placeholder="Card holder name">
+      </form>
+    </div>
+
+
+  </div>
 </div>
 
 
-<form>
-  <p>Card details</p>
-  <input type="card number" placeholder="Card Number">
-  <input type="expiry" placeholder="Expriy">
-  <input type="CVV" placeholder="CVV">
-  <input type="Card Holder Name"  placeholder="Card holder name">
-</form>
+<div class="summarycontainer">
+  <h2>Summary</h2>
+ <div class="card-trip">
 
-<div class="form-actions">
-  <%= f.button :submit,  class: "btn-create"  %>
-<% end %>
-</div>
-</div>
+        <img src="https://source.unsplash.com/random?sig=#{rand(1..1000)}&?jet" alt="">
+
+          <div class="card-trip-infos">
+              <div>
+
+
+                <%= cl_image_tag @booking.plane.photo.key %>
+
+              </div>
+          </div>
+
+        </div>
+
+
 </div>
