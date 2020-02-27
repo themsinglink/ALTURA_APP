@@ -44,7 +44,4 @@ end
   def plane_params
     params.require(:plane).permit(:capacity, :location, :name, :rate, :description, :pilot_name, :photo)
   end
-
-
-
 end
