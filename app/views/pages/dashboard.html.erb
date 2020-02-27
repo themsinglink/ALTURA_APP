@@ -1,1 +1,92 @@
-<p>hello</p>
+<div class="dashboardcontainer">
+  <div class="navbar navbar-white" style="margin-bottom: -117px;">
+  <div class="logo">
+    <p><%= link_to("ALTURA", "/planes")%></p>
+  </div>
+  <div class="links">
+    <% if current_user %>
+      <ul>
+     <% if current_user.planes.any? %>
+            <li><%= link_to("BOOKINGS", plane_path(Plane.find_by(user: current_user)))%></li>
+        <% end %>
+      <li><%= link_to "LOG OUT", destroy_user_session_path, :method => :delete %></li>
+      </ul>
+    <% end %>
+  </div>
+</div>
+
+<div class="dashboard">
+
+
+  <div class="dashleft">
+    <div class="profileinfo">
+    <div class="profile">
+      <%= image_tag "laura.png", class: "avatar-large", alt: "alttext" %>
+      <h4>Katy Link</h4>
+      <p>Madrid, Spain</p>
+    </div>
+    <div class="dashlinks">
+      <div class="bookings">
+        <i class="fas fa-calendar-week"></i>
+        <p>BOOKINGS</p>
+      </div>
+      <div class="trips">
+        <i class="fas fa-globe"></i>
+        <p>MY TRIPS</p>
+      </div>
+      <div class="settings">
+        <i class="fas fa-sliders-h"></i>
+        <p>SETTINGS</p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="dashright">
+      <div class="dashrightcontent d-flex">
+        <div class="dash-block">
+          <h1>Earnings</h1>
+          <div class="earnings">
+            <h4>Total Earnings</h4>
+            <p>$10,300</p>
+          </div>
+          <div class="bottomstats">
+            <div class="daily">
+              <h4>Daily Avg</h4>
+              <p>$1,500</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="requested">
+          <h1>Requested Bookings</h1>
+          <div class="request d-flex flex-row">
+            <div class="person">
+              <%= image_tag "laura.png", class: "avatar", alt: "alttext" %>
+
+            </div>
+            <div class="message">
+              <p>Laura Aunion</p>
+              <h5>Hi Katy! I would like to book your jet to Shanghai...</h5>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="myplane">
+        <h1>My Plane</h1>
+        <div class="planecontainer">
+          <div class="planeleft">
+            <h2>Boeing 271</h2>
+            <h3>$2000</h3>
+            <p>per hour</p>
+          </div>
+          <div class="planeright">
+            <p>EDIT</p>
+            <%= image_tag "dashboardplane.png", class: "planeimg", alt: "alttext" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

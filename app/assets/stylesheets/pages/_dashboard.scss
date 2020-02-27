@@ -1,0 +1,262 @@
+p {
+  font-family: Montserrat;
+}
+
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+.dashleft {
+  width: 23%;
+  background-color: #49C396;
+}
+
+.profile {
+  padding-top: 30%;
+  text-align: center;
+}
+
+.profile h4 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 39px;
+  color: white;
+  margin-bottom: 0;
+  margin-top: 2%;
+}
+
+.profile p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 39px;
+  color: white;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.profileinfo {
+  margin-top: 15%;
+}
+
+.dashlinks {
+  padding-left: 28%;
+  margin-top: 5%;
+  padding-top: 2%;
+}
+
+.dashlinks i {
+  color: white;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 3px;
+}
+
+.dashlinks p {
+  font-family: Montserrat;
+  color: white;
+  font-size: 20px;
+  line-height: 39px;
+  letter-spacing: 0.05em;
+  font-weight: 200;
+  margin-left: 10px;
+}
+.dashright {
+  flex-grow: 1;
+  background-color: #F3F1F1;
+}
+
+.dashrightcontent {
+  padding-left: 7%;
+  padding-top: 11%;
+
+}
+
+.dashright h1 {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 50px;
+  color: #424242;
+  margin-bottom: 8px;
+}
+
+.dashright h4 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 39px;
+  color: #7B7A7A;
+}
+
+.dashright p {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 39px;
+  color: #424242
+}
+
+.topcontent {
+  display: flex;
+}
+
+.bookings {
+  display: flex;
+}
+
+.trips {
+  display: flex;
+}
+
+.settings {
+  display: flex;
+}
+
+.bottomstats {
+  display: flex;
+}
+
+.earnings {
+  background: white;
+  border-radius: 15px;
+  padding: 12px;
+  padding-left: 35px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin-top: 0;
+}
+
+.dash-block h1 {
+  margin-bottom: 7%;
+}
+
+.daily {
+  background: white;
+  border-radius: 15px;
+  padding: 12px;
+  padding-left: 35px;
+  padding-bottom: 10px;
+  padding-right: 90px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.bookingstat {
+  background: white;
+  border-radius: 15px;
+  padding: 10px 20px 10px 30px;
+  margin-left: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.bottomstats {
+  margin-top: 4%;
+}
+
+.request {
+  display: flex;
+}
+
+.message {
+  padding-left: 2%;
+}
+.message p {
+  color: white;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.message h5 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-weight: 200;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.request {
+  background: #49C396;
+  border-radius: 15px;
+  padding: 12px 20px 12px 30px;
+  margin-bottom: 3%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.requested {
+  margin-left: 8%;
+  margin-right: 7%;
+}
+
+.planecontainer {
+  background: white;
+  border-radius: 15px;
+  padding: 12px 20px 12px 30px;
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  margin-top: 0;
+  padding-top: 0;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.myplane {
+  padding-left: 7%;
+  margin-top: 3%;
+}
+
+.myplane h1 {
+  margin-bottom:: 10px;
+  padding-bottom: 0;
+}
+
+.planeleft h2 {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 45px;
+  color: #9E9B9B;
+  margin-top: 9px;
+}
+
+.planeleft h3 {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 47px;
+  color: #7B7A7A;
+  margin-left: 5%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.planeleft p {
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 18px;
+  margin-top: 0;
+  padding-top: 0;
+  color: #9E9B9B;
+  margin-left: 6%;
+  }
+
+.planeright p {
+  font-size: 22px;
+  line-height: 37px;
+  font-weight: 200;
+  letter-spacing: 0.05em;
+  color: #7B7A7A;
+  margin-left: 130px;
+  margin-top: 10px;
+}
+
+.planeimg {
+  width: 200px;
+}
