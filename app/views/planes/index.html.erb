@@ -20,7 +20,28 @@
       <%= link_to "List a plane", new_plane_path, class: 'mainbutton' %>
   </div>
 </div>
+
 <h2 class="container font-change">Available near me</h2>
+
+<!-- this is the search bar -->
+
+<div class="searchbar container form-inline">
+
+<%= form_tag planes_path, class: "search-bar", method: :get do %>
+  <%= text_field_tag :query,
+    params[:query],
+    class: "form-control search-input",
+    placeholder: "Find a private jet"
+  %>
+   <span class="input-group-btn">
+      <%= submit_tag "Search", class: "btn-custom" %>
+
+  </span>
+<% end %>
+
+</divn>
+
+
 <div class= 'planes-container container'>
     <% @planes.each do |plane| %>
 
@@ -47,6 +68,16 @@
     <% end %>
   </div>
 
+
+<!-- After executed search back to index -->
+
+<div class=search-footer>
+
+  <% if params[:query] %>
+  <%= link_to "Back to Overview", planes_path, class: 'btn-custom' %>
+  <% end %>
+
+</div>
 
 
 

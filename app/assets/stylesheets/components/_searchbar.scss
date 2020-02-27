@@ -1,0 +1,36 @@
+.searchbar {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-top: 32px;
+}
+
+
+.form-control {
+  border-radius: 5px;
+  padding: 10px 25px;
+  height: 46px;
+  margin-bottom:32px;
+  margin-top:32px;
+  font-family: Montserrat;
+
+}
+
+.search-footer {
+  margin: 30px;
+  text-align: center;
+}
+
+
+.search-bar {
+  display: flex;
+  width: 100%;
+
+  .form-control {
+    margin-top: 0px;
+  }
+}
+
+.search-input {
+  flex-grow: 2;
+}

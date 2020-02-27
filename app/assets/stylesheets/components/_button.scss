@@ -51,9 +51,23 @@ h2 {
 
 .btn-custom:hover {
   /* color: #EAB9D7; */
-  box-shadow:0px 0px 20px rgba(213, 116, 175, 0.4);
+  // box-shadow:0px 0px 20px rgba(213, 116, 175, 0.4);
+  // transition: all 0.2s ease-in;
+  // transition-property: box-shadow;
+  // text-decoration: none;
+  opacity: .8;
   transition: all 0.2s ease-in;
-  transition-property: box-shadow;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-custom a {
+  text-decoration: none;
+}
+
+.btn-custom a:hover {
+  text-decoration: none;
+  color: white !important;
 }
 
 .mainbutton {
