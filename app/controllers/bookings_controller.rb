@@ -23,6 +23,10 @@ class BookingsController < ApplicationController
     redirect_to plane_path(@plane)
   end
 
+  def show
+    @booking = Booking.find(params[:id])
+  end
+
   private
 
   def booking_params
