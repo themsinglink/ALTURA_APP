@@ -1,0 +1,32 @@
+<div class="pagecontainer">
+
+<h2>Message owner</h2>
+<div class="formcontainer">
+
+<%= simple_form_for(@booking) do |f| %>
+
+<div class="description-inputs">
+  <%= f.input :name, label: "Plane Name", placeholder: 'Boing 777' %>
+</div>
+
+<div class="d-flex form-inputs">
+  <span><%= f.input :rate, label: "Rate ", placeholder: 'Price per hour'  %></span>
+  <span><%= f.input :pilot_name, label: "Pilot Name ", placeholder: 'J Balbin' %></span>
+</div>
+
+  <div class="d-flex horizontal-inputs ">
+  <span><%= f.input :location, label: "Location",placeholder: 'Miami Intenational Airport' %></span>
+  <span><%= f.input :capacity,label: "Capacity", placeholder: 'How many people?'  %></span>
+</div>
+
+  <div class="description-inputs">
+  <%= f.input :description, label: "Description", placeholder: 'Information regarding the plane' %>
+</div>
+  <%= f.input :photo, as: :file %>
+
+<div class="form-actions">
+  <%= f.button :submit,  class: "btn-create"  %>
+<% end %>
+</div>
+</div>
+</div>
