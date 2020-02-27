@@ -1,6 +1,6 @@
 <div class="showpage">
 
-
+<div class="photo-container">
 <% if @plane.photo.attached?  %>
 <div class="banner-photo" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path @plane.photo.key %>);">
 </div>
@@ -8,7 +8,11 @@
 <div class="banner-photo" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= "https://source.unsplash.com/random?sig=#{rand(1..1000)}&?jet" %>);">
 </div>
 <% end %>
-
+  <div class="rate">
+    <p>$<%= @plane.rate.to_i %></p>
+    <span>per hour</span>
+  </div>
+</div>
 <div class="content">
 
 <div class="left">
@@ -38,9 +42,6 @@
   <div class="description">
     <p><%= @plane.description %></p>
   </div>
-  <div class="rate">
-    <p>Hourly rate: <%= @plane.rate.to_i %>$</p>
-  </div>
 </div>
 
 
@@ -66,10 +67,10 @@
   <div class="rightcontent">
     <h2>Request Booking</h2>
       <div class="calendar">
-            <%= simple_form_for [@plane, @booking] do |f| %>
+      <%= simple_form_for [@plane, @booking] do |f| %>
       <%= f.input :start, as: :string, required: false, input_html: {class: "datepicker"} %>
       <%= f.input :end, as: :string, required: false, input_html: {class: "datepicker"} %>
-      <%= f.button :submit, "Submit", class: "btn button-green" %>
+      <%= f.button :submit, "Submit", class: "btn button-green"%>
     <% end %>
         </div>
       </div>

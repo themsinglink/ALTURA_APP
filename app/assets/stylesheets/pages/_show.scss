@@ -213,7 +213,21 @@ body {
   margin-top: 0;
 }
 
-.rate p {
-  margin-left: 10px;
+.photo-container{
+  position: relative;
+}
+
+.rate {
+  position: absolute;
+  bottom: 6%;
+  left: 14%;
+  color: white;
+  font-weight: bolder;
+  p {
+    margin-bottom: 0;
+  }
+  span {
+    font-weight: lighter;
+  }
 }
 
