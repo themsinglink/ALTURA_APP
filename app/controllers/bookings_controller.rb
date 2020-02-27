@@ -11,6 +11,7 @@ class BookingsController < ApplicationController
     @booking.plane = @plane
     @booking.user = current_user
     if @booking.save
+      redirect_to booking_path(@booking)
     else
      render 'planes/show'
     end
