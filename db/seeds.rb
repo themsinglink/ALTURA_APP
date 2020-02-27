@@ -27,7 +27,7 @@ puts "#{User.count} users created."
 puts 'Creating airplanes'
 
 file_1 = URI.open('https://i.imgur.com/Ii5oOfj.jpg')
-plane_1 = Plane.new(capacity: 10, location: "Rio de Janeiro", name: "Boing 123", pilot_name: "Bruce", rate: 1000, description: "super stylish vintage model", user: user_4)
+plane_1 = Plane.new(capacity: 10, location: "Biarritz", name: "Boing 123", pilot_name: "Bruce", rate: 1000, description: "super stylish vintage model", user: user_4)
 plane_1.photo.attach(io: file_1, filename: 'file_1.jpg', content_type: 'image/jpg')
 plane_1.save
 
@@ -37,7 +37,7 @@ plane_2.photo.attach(io: file_2, filename: 'file_2.jpg', content_type: 'image/jp
 plane_2.save
 
 file_3 = URI.open('https://i.imgur.com/9IVQRwF.jpg')
-plane_3 = Plane.new(capacity: 12, location: "Santiago de Chile", name: "Jumbo Jet", pilot_name: "Maria", rate: 3000, description: "the largest plane to rent", user: user_3 )
+plane_3 = Plane.new(capacity: 12, location: "Lima", name: "Jumbo Jet", pilot_name: "Maria", rate: 3000, description: "the largest plane to rent", user: user_3 )
 plane_3.photo.attach(io: file_3, filename: 'file_3.jpg', content_type: 'image/jpg')
 plane_3.save
 
@@ -47,7 +47,7 @@ plane_4.photo.attach(io: file_4, filename: 'file_4.jpg', content_type: 'image/jp
 plane_4.save
 
 file_5 = URI.open('https://i.imgur.com/n7PoUr0.jpg')
-plane_5 = Plane.new(capacity: 6, location: "Olso", name: "Boing 777", pilot_name: "Matteo", rate: 2000, description: "latest technologie and beautiful interio design", user: user_1 )
+plane_5 = Plane.new(capacity: 6, location: "Madrid", name: "Boing 777", pilot_name: "Matteo", rate: 2000, description: "latest technologie and beautiful interio design", user: user_1 )
 plane_5.photo.attach(io: file_5, filename: 'file_5.jpg', content_type: 'image/jpg')
 plane_5.save
 

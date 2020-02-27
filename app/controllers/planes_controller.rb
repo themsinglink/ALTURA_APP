@@ -12,7 +12,16 @@ class PlanesController < ApplicationController
   def show
     @plane = Plane.find(params[:id])
     @booking = Booking.new
+    # trying to integrate the map here, this is new
+    @planes = Plane.geocoded
+    @planes = @planes.where(id: params[:id])
+    @markers = @planes.map do |plane|
+      {
+        lat: plane.latitude,
+        lng: plane.longitude
+      }
   end
+end
 
   def new
     @plane = Plane.new
