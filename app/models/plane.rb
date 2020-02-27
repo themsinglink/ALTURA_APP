@@ -12,4 +12,12 @@ class Plane < ApplicationRecord
   validates :name, presence: true
 
 
+  include PgSearch::Model
+  pg_search_scope :search_by_location_and_name_and_pilot_name,
+    against: [ :location, :name, :pilot_name ],
+    using: {
+      tsearch: { prefix: true }
+    }
+
+
 end

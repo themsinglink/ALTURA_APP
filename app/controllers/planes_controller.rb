@@ -2,7 +2,11 @@ class PlanesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-  @planes = Plane.all
+    if params[:query].present?
+      @planes = Plane.search_by_location_and_name_and_pilot_name(params[:query])
+    else
+      @planes = Plane.all
+    end
   end
 
   def show
