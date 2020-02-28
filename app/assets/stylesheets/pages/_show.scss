@@ -206,6 +206,19 @@ body {
 }
 
 
+.date-summary {
+  p {
+    font-size: 20px;
+    text-align: center;
+    color: grey;
+  }
+}
+
+.plane-price {
+ display: flex;
+ justify-content: space-between;
+
+
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -233,4 +246,5 @@ p {
 
 img {
   margin: auto;
+
 }
