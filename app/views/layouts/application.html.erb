@@ -10,7 +10,7 @@
     <%= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
-    <% unless current_page?('/planes') || current_page?('/') || current_page?("/users/sign_in") %>
+    <% unless current_page?('/planes') || current_page?('/') || current_page?("/users/sign_in") || current_page?("/dashboard") %>
   <div class="navbar">
   <div class="logo">
     <p><%= link_to("ALTURA", "/planes")%></p>

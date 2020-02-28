@@ -9,6 +9,7 @@ gem 'rails', '5.2.4.1'
 gem 'redis'
 
 gem 'pg_search', '~> 2.3.0'
+gem 'geocoder'
 
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
