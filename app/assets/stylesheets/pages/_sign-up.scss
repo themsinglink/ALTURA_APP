@@ -1,9 +1,39 @@
-.new-body {
-  background: url("https://images.unsplash.com/photo-1518713445884-d97080d2dea3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat center center fixed;
+.signup-body {
+  background: url("https://images.unsplash.com/photo-1561516013-83fd04a1ca33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80") no-repeat center center fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh;
   width: 100vw;
   padding-top: 80px;
+}
+
+
+.sign-up-container{
+    max-width: 540px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #49C396;
+    max-height: 1200px;
+    padding: 45px 30px;
+    color: white;
+    font-family: Montserrat;
+}
+
+
+.pagecontainer{
+  width: 100%;
+  margin: 0 auto;
+  background-color: #49C396;
+  box-shadow: 0.879193px 0.879193px 3.51677px rgba(0, 0, 0, 0.25);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 4px;
+  color: white;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: -12px;
+
 }
