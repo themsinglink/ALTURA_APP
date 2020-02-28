@@ -1,20 +1,20 @@
+
 <div class="mytrips">
         <div class= 'container dashboard-container'>
     <% @planes.each do |plane| %>
       <div class="card-trip dashboard-card margin-card">
         <%= link_to plane_path(plane) do %>
-        <% if plane.photo.attached? %>
+        <div class="photo">
         <%= cl_image_tag plane.photo.key %>
-        <% else %>
-        <img src="https://source.unsplash.com/random?sig=#{rand(1..1000)}&?jet" alt="">
-        <% end %>
+        <h2 class="card-trip-pricing confirmed"> CONFIRMED</h2>
+        </div>
 
-          <div class="card-trip-infos">
-              <div>
-                  <h2><%= plane.name%></h2>
+          <div class="card-trip-infos ">
+              <div class="dashboard-card-trip">
+                  <h2>WED, MAY 23, 3:00 PM - FRI MAY 25, 11:00 AM</h2>
+                  <h2 style="font-size: 20px; margin-top: 7px; margin-bottom: 3px;"><%= plane.name%></h2>
                   <p> <%= plane.description%> </p>
               </div>
-                 <h2 class="card-trip-pricing"> $<%= plane.rate %></h2>
           </div>
         <% end %>
         </div>
