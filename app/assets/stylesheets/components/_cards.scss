@@ -2,10 +2,32 @@
   overflow: hidden;
   background: white;
   border-radius: 5px;
+  transition: all .3s ease 0s;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
    a {
     color: black;
   }
+}
+
+.margin-card {
+  margin-bottom: 3%;
+}
+
+.dashboard-container {
+    grid-template-columns: 1fr;
+    width: 80%;
+}
+
+.dashboardcard img{
+  height: 300px;
+}
+
+.card-trip:hover {
+  opacity: .7;
+}
+
+.card-trip a:hover {
+  text-decoration: none;
 }
 
 .card-trip img {
