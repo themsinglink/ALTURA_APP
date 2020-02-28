@@ -9,7 +9,7 @@
 require "open-uri"
 
 puts 'Cleaning database...'
-
+Booking.destroy_all
 Plane.destroy_all
 User.destroy_all
 

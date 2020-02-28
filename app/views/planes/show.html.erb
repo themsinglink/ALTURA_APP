@@ -58,25 +58,6 @@
 </div>
 
 
-<% if current_user == @plane.user %>
-
-<div class="right">
-  <div class="rightcontent">
-    <h2>New bookings</h2>
-    <div class="user">
-      <%= image_tag "laura.png", class: "avatar", alt: "alttext" %>
-      <p>Laura Aunion</p>
-    </div>
-    <div class="message">
-      <p>Hi Katy! I would like to book your jet to Beijing on the 24th at 2pm. My number is 203-393-234!</p>
-    </div>
-    <div class="button-green">
-      <a href="#">Approve</a>
-    </div>
-  </div>
-
-</div>
-<% else %>
 <div class="right">
   <div class="rightcontent">
     <h2>Request Booking</h2>
@@ -89,9 +70,6 @@
         </div>
       </div>
   </div>
-
-
-<% end %>
 
 </div>
 
