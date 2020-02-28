@@ -23,6 +23,33 @@
         </div>
       </form>
     </div>
+
+<button type="button" class="btn button-green" data-toggle="modal" data-target="#exampleModalCenter" style="width: 70%; margin: 0 auto; margin-top: 40%;">Confirm</button>
+
+               <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content container">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Congratulations!</h5>
+      </div>
+      <div class="modal-body">
+     <div class="card-trip">
+      <%= cl_image_tag @booking.plane.photo.key %>
+      <div class="card-trip-infos">
+          <h2><%= @booking.plane.name%></h2>
+          <p> <%= @booking.plane.description%> </p>
+      <h2 class="card-trip-pricing"> $<%= @booking.plane.rate %></h2>
+      </div>
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn button-white"> <%= link_to "Go to Dashboard", dashboard_path %> </button>
+      </div>
+    </div>
+  </div>
+</div>
+
   </div>
 
 <div class="summarycontainer">
@@ -31,13 +58,21 @@
       <%= cl_image_tag @booking.plane.photo.key %>
       <div class="card-trip-infos">
           <h2><%= @booking.plane.name%></h2>
-          <p> <%= @booking.plane.description%> </p>
       <h2 class="card-trip-pricing"> $<%= @booking.plane.rate %></h2>
       </div>
   </div>
   <div class="date-summary">
-
-
+    <br>
+  <h4>From</h4>
+   <p><%= @booking.start.strftime("%A %d, %Y") %> at
+  <%= @booking.start.strftime("%H:%M%p") %></p>
+  <h4>To</h4>
+  <p><%= @booking.end.strftime("%A %d, %Y") %> at
+  <%= @booking.end.strftime("%H:%M%p") %></p>
+  <div class="plane-price">
+    <h4> <strong> Total:</strong></h4>
+    <h4>$<%= (((@booking.end - @booking.start) / 3600) * @booking.plane.rate).to_i %></h4>
+  </div>
   </div>
 </div>
 </div>

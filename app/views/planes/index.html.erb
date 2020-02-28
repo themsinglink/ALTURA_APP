@@ -7,7 +7,7 @@
     <% if current_user %>
       <ul>
      <% if current_user.planes.any? %>
-            <li><%= link_to("BOOKINGS", plane_path(Plane.find_by(user: current_user)))%></li>
+            <li><%= link_to("BOOKINGS", dashboard_path)%></li>
         <% end %>
       <li><%= link_to "LOG OUT", destroy_user_session_path, :method => :delete %></li>
       </ul>
