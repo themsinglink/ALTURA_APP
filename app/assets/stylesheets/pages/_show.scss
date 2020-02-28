@@ -107,34 +107,6 @@ body {
   display: flex;
 }
 
-.button-green {
-  border-radius: 5px;
-  background-color: #49C396;
-  padding: 8px 28px;
-  transition: all .3s ease 0s;
-  width: 300px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  color: white;
-  font-weight: bold;
-}
-
-.button-green a {
-  font-size: 20px;
-  line-height: 37px;
-  text-decoration: none;
-  letter-spacing: 1.12px;
-  font-weight: 500;
-  font-family: Montserrat;
-  color: #ffffff;
-}
-
-.button-green:hover {
-  opacity: .7;
-}
-
 .icon {
   width: 15px;
   height: 15px;
