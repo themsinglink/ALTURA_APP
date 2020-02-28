@@ -1,11 +1,17 @@
 
 <div class="mytrips">
+  <% if current_user.bookings.empty? %>
+  <div class="nobookings">
+  <h2>You don’t have anything coming up—book your next trip on Altura.</h2>
+  </div>
+  <% else %>
+
         <div class= 'container dashboard-container'>
-    <% @planes.each do |plane| %>
+    <% current_user.bookings.each do |booking| %>
       <div class="card-trip dashboard-card margin-card">
-        <%= link_to plane_path(plane) do %>
+        <%= link_to plane_path(booking.plane) do %>
         <div class="photo">
-        <%= cl_image_tag plane.photo.key %>
+        <%= cl_image_tag booking.plane.photo.key %>
         <h2 class="card-trip-pricing confirmed"> CONFIRMED</h2>
         </div>
 
@@ -20,4 +26,5 @@
         </div>
     <% end %>
   </div>
+    <% end %>
 </div>

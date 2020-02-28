@@ -11,6 +11,31 @@
   margin-right: 17%;
 }
 
+.nobookings {
+  margin-top: 20%;
+  background: white;
+  background: white;
+  border-radius: 15px;
+  padding: 12px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 40px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  width: 80%;
+  margin: 20% 5%;
+  margin-right: 20%;
+}
+
+.nobookings h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  color: #454141;
+  text-align: center;
+}
+
 .bookingscontainer h2 {
   font-family: Montserrat;
   font-style: normal;
@@ -251,6 +276,10 @@ p {
 
 .bookings {
   display: flex;
+}
+
+.bookings p {
+
 }
 
 .trips {

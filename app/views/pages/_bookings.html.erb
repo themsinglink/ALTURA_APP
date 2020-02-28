@@ -2,8 +2,8 @@
       <div class="myplane">
         <div class="planecontainer">
           <div class="planeleft">
-            <h2>Boeing 271</h2>
-            <h3>$2000</h3>
+            <h2><%= current_user.planes.last.name %></h2>
+            <h3>$<%= current_user.planes.last.rate.to_i %></h3>
             <p>per hour</p>
           </div>
           <div class="planeright">
