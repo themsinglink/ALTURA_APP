@@ -4,4 +4,8 @@ class PagesController < ApplicationController
     @planes = Plane.all
     @bookings = Booking.where(user: current_user)
   end
+
+  def trips
+  end
+
 end
