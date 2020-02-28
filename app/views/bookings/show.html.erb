@@ -38,13 +38,13 @@
       <%= cl_image_tag @booking.plane.photo.key %>
       <div class="card-trip-infos">
           <h2><%= @booking.plane.name%></h2>
-          <p> <%= @booking.plane.description%> </p>
+          <p> <%= @booking.plane.description.first(25)%>... </p>
       <h2 class="card-trip-pricing"> $<%= @booking.plane.rate %></h2>
       </div>
   </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn button-white"> <%= link_to "Go to Dashboard", dashboard_path %> </button>
+        <button type="button" class="btn button-white"> <%= link_to "Go to Dashboard", trips_path %> </button>
       </div>
     </div>
   </div>
