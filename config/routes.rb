@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   resources :bookings, only: [:show]
 
   get "/dashboard", to: "pages#dashboard"
+  get "/trips", to: "pages#trips"
 
 end
