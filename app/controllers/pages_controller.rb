@@ -2,10 +2,6 @@ class PagesController < ApplicationController
 
   def dashboard
     @planes = Plane.all
-    if User.planes.any?
-      render '/dashboard'
-    else
-      render '/trips'
-    end
+    @bookings = Booking.where(user: current_user)
   end
 end
