@@ -1,0 +1,80 @@
+<div class="wholepagecontainer">
+  <div class="booking-form-container">
+    <div class="message-container">
+      <form >
+        <h2>Payment Details</h2>
+        <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+
+        <div class="input-group">
+        <label for="card-number">Card Number</label>
+        <input type="card number" id="card-number" placeholder="Valid Card Number">
+        </div>
+        <div class="input-group">
+        <label for="expiry">Expiration Date</label>
+        <input type="expiry" id="expiry" placeholder="MM/YY">
+        </div>
+        <div class="input-group">
+        <label for="CVC">Cv Code</label>
+        <input type="CVC" id="CVC" placeholder="CVC">
+        </div>
+        <div class="input-group">
+        <label for="Card Holder Name">Card Holder Name</label>
+        <input type="Card Holder Name"  placeholder="Card holder name">
+        </div>
+      </form>
+    </div>
+
+<button type="button" class="btn button-green" data-toggle="modal" data-target="#exampleModalCenter" style="width: 70%; margin: 0 auto; margin-top: 40%;">Confirm</button>
+
+               <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content container">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Congratulations!</h5>
+      </div>
+      <div class="modal-body">
+     <div class="card-trip">
+      <%= cl_image_tag @booking.plane.photo.key %>
+      <div class="card-trip-infos">
+          <h2><%= @booking.plane.name%></h2>
+          <p> <%= @booking.plane.description%> </p>
+      <h2 class="card-trip-pricing"> $<%= @booking.plane.rate %></h2>
+      </div>
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn button-white"> <%= link_to "Go to Dashboard", dashboard_path %> </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+<div class="summarycontainer">
+   <h2>Summary</h2>
+   <div class="card-trip">
+      <%= cl_image_tag @booking.plane.photo.key %>
+      <div class="card-trip-infos">
+          <h2><%= @booking.plane.name%></h2>
+      <h2 class="card-trip-pricing"> $<%= @booking.plane.rate %></h2>
+      </div>
+  </div>
+  <div class="date-summary">
+    <br>
+  <h4>From</h4>
+   <p><%= @booking.start.strftime("%A %d, %Y") %> at
+  <%= @booking.start.strftime("%H:%M%p") %></p>
+  <h4>To</h4>
+  <p><%= @booking.end.strftime("%A %d, %Y") %> at
+  <%= @booking.end.strftime("%H:%M%p") %></p>
+  <div class="plane-price">
+    <h4> <strong> Total:</strong></h4>
+    <h4>$<%= (((@booking.end - @booking.start) / 3600) * @booking.plane.rate).to_i %></h4>
+  </div>
+  </div>
+</div>
+</div>
+
+

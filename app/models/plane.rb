@@ -11,6 +11,9 @@ class Plane < ApplicationRecord
   validates :photo, presence: true
   validates :name, presence: true
 
+  geocoded_by :location
+  after_validation :geocode, if: :will_save_change_to_location?
+
 
   include PgSearch::Model
   pg_search_scope :search_by_location_and_name_and_pilot_name,
@@ -18,6 +21,5 @@ class Plane < ApplicationRecord
     using: {
       tsearch: { prefix: true }
     }
-
 
 end

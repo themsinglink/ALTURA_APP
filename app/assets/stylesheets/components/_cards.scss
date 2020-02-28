@@ -2,10 +2,65 @@
   overflow: hidden;
   background: white;
   border-radius: 5px;
+  transition: all .3s ease 0s;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
    a {
     color: black;
   }
+}
+
+.margin-card {
+  margin-bottom: 3%;
+}
+
+.dashboard-container {
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin-top: 13%;
+    margin-left: 5%;
+}
+.photo {
+  position: relative;
+}
+.confirmed {
+  position: absolute;
+  bottom: 9%;
+  right: 14%;
+  background-color: white;
+  padding: 5px 13px;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  opacity: .9;
+  border-radius: 4px;
+}
+
+.photo h2 {
+  color: black;
+  font-family: Montserrat;
+  letter-spacing: 1.7px;
+  font-weight: 200;
+}
+
+
+.dashboard-card-trip {
+  padding: 20px;
+}
+
+.dashboardcard img{
+  height: 250px;
+}
+
+.dashboard-card-trip h2 {
+  font-size: 18px;
+}
+
+.card-trip:hover {
+  opacity: .7;
+}
+
+.card-trip a:hover {
+  text-decoration: none;
 }
 
 .card-trip img {

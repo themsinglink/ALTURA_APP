@@ -1,6 +1,6 @@
 <div class="showpage">
 
-
+<div class="photo-container">
 <% if @plane.photo.attached?  %>
 <div class="banner-photo" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path @plane.photo.key %>);">
 </div>
@@ -8,8 +8,24 @@
 <div class="banner-photo" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= "https://source.unsplash.com/random?sig=#{rand(1..1000)}&?jet" %>);">
 </div>
 <% end %>
+  <div class="rate">
+    <p>$<%= @plane.rate.to_i %></p>
+    <span>per hour</span>
+  </div>
+</div>
 
 <div class="content">
+
+  <div class="userinfo">
+    <div class="userinfocontent">
+       <div class="user">
+      <%= cl_image_tag @plane.user.photo.key, class: "avatar-large user-profile", alt: "alttext" %>
+    </div>
+    <h2>Meet <%= @plane.user.firstname %></h2>
+    <p>" <%= @plane.user.bio %> "</p>
+
+    </div>
+  </div>
 
 <div class="left">
   <h2>Premium Jet Features</h2>
@@ -35,16 +51,15 @@
     </div>
     </div>
   </div>
+  <br>
   <div class="description">
     <p><%= @plane.description %></p>
-  </div>
-  <div class="rate">
-    <p>Hourly rate: <%= @plane.rate.to_i %>$</p>
   </div>
 </div>
 
 
 <% if current_user == @plane.user %>
+
 <div class="right">
   <div class="rightcontent">
     <h2>New bookings</h2>
@@ -66,39 +81,11 @@
   <div class="rightcontent">
     <h2>Request Booking</h2>
       <div class="calendar">
-            <%= simple_form_for [@plane, @booking] do |f| %>
+      <%= simple_form_for [@plane, @booking] do |f| %>
       <%= f.input :start, as: :string, required: false, input_html: {class: "datepicker"} %>
       <%= f.input :end, as: :string, required: false, input_html: {class: "datepicker"} %>
-      <%= f.button :submit, "Submit", class: "btn button-green", data: { toggle: "modal", target:"#exampleModalCenter"}  %>
+      <%= f.button :submit, "Submit", class: "btn button-green"%>
     <% end %>
-
-
-
-<!-- Button trigger modal -->
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Congratu</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
         </div>
       </div>
   </div>
@@ -107,6 +94,13 @@
 <% end %>
 
 </div>
+
+<!-- maps boxs -->
+<div  id="map"
+  style="width: 100%;
+  height: 600px;"
+  data-markers="<%= @markers.to_json %>"
+  data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
 </div>
 
 

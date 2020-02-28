@@ -11,6 +11,7 @@ class BookingsController < ApplicationController
     @booking.plane = @plane
     @booking.user = current_user
     if @booking.save
+      redirect_to booking_path(@booking)
     else
      render 'planes/show'
     end
@@ -21,6 +22,10 @@ class BookingsController < ApplicationController
     @plane = @booking.plane
     @booking.destroy
     redirect_to plane_path(@plane)
+  end
+
+  def show
+    @booking = Booking.find(params[:id])
   end
 
   private

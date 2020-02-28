@@ -35,7 +35,8 @@ body {
   flex-direction: column;
   align-content: center;
   width: 80%;
-  margin-left: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .rightcontent {
@@ -59,13 +60,14 @@ body {
   width: 70%;
   background-color: #F4F4F4;
   border-radius: 10px;
-  margin-right: 10%;
+  margin-right: 5%;
 
 }
 
 .user {
   display: flex;
   align-items: center;
+  margin: auto;
 }
 
 .user p {
@@ -105,34 +107,6 @@ body {
 
 .location {
   display: flex;
-}
-
-.button-green {
-  border-radius: 5px;
-  background-color: #49C396;
-  padding: 8px 28px;
-  transition: all .3s ease 0s;
-  width: 300px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  color: white;
-  font-weight: bold;
-}
-
-.button-green a {
-  font-size: 20px;
-  line-height: 37px;
-  text-decoration: none;
-  letter-spacing: 1.12px;
-  font-weight: 500;
-  font-family: Montserrat;
-  color: #ffffff;
-}
-
-.button-green:hover {
-  opacity: .7;
 }
 
 .icon {
@@ -213,7 +187,64 @@ body {
   margin-top: 0;
 }
 
-.rate p {
-  margin-left: 10px;
+.photo-container{
+  position: relative;
 }
 
+.rate {
+  position: absolute;
+  bottom: 6%;
+  left: 14%;
+  color: white;
+  font-weight: bolder;
+  p {
+    margin-bottom: 0;
+  }
+  span {
+    font-weight: lighter;
+  }
+}
+
+
+.date-summary {
+  p {
+    font-size: 20px;
+    text-align: center;
+    color: grey;
+  }
+}
+
+.plane-price {
+ display: flex;
+ justify-content: space-between;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 40%;
+  background-color: #F4F4F4;
+  border-radius: 10px;
+  margin-left: 5%;
+}
+
+
+.userinfocontent {
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 89%;
+  margin: auto;
+  padding-right: 0px;
+}
+
+.userinfocontent p {
+  font-weight: lighter;
+}
+
+.userinfocontent img {
+  margin: auto;
+
+}

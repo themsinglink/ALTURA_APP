@@ -1,0 +1,453 @@
+.bookingscontainer {
+  background-color: white;
+  border-radius: 15px;
+  padding-left: 35px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-top: 23px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin-top: 4%;
+  margin-left: 8%;
+  margin-right: 17%;
+}
+
+.nobookings {
+  margin-top: 20%;
+  background: white;
+  background: white;
+  border-radius: 15px;
+  padding: 12px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 40px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  width: 80%;
+  margin: 20% 5%;
+  margin-right: 20%;
+}
+
+.nobookings h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  color: #454141;
+  text-align: center;
+}
+
+.bookingscontainer h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  color: #454141;
+}
+
+.bookingscontainer p {
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 28px;
+  color: #454141;
+  font-weight: lighter;
+}
+
+.headers {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin: 0 30px;
+  border-bottom: 1px solid #D2D2D2;
+}
+
+.data {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin: 0 55px 0px 10px;
+}
+
+.passengersdata {
+  background-color: #49C396;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  padding-top: 4px;
+  text-align: center;
+}
+
+.passengersdata p {
+  color: white;
+  font-weight: bold;
+}
+
+.incomedata p {
+  font-weight: bold;
+}
+
+.profilerenter {
+  display: flex;
+}
+
+.profilerenter p {
+  margin-top: 6px;
+  margin-left: 10px;
+  margin-right: -70px;
+}
+
+.datacontainer {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  padding-left: 58px;
+  padding-bottom: 20px;
+  padding-right: 58px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-top: 0;
+}
+
+.datacontainer p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #7B7A7A;
+  opacity: .8;
+}
+
+.datacontainer h4 {
+  font-weight: 500;
+  font-size: 35px;
+  letter-spacing: 0.08em;
+  color: #424242;
+  margin-bottom: 4px;
+}
+
+.add-margin {
+  margin: 30px;
+  text-align: center;
+  margin-left: 8%;
+  justify-content: space-between;
+  margin-right: 17%;
+  margin-top: 4%;
+}
+
+.datedata p {
+  padding-top: 4px;
+  margin-left: -160px;
+  margin-right: -50px;
+}
+
+.incomedata p {
+  padding-top: 4px;
+  padding-left: 5px;
+}
+
+.passengers p {
+  margin-left: 60px;
+}
+
+.income p {
+  margin-left: -55px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+p {
+  font-family: Montserrat;
+}
+
+.dashboard {
+  display: flex;
+  background-color: #E2ECEB;
+}
+
+.dashleft {
+  width: 23%;
+  background-color: #3D5653;
+  border-radius: 0px 60px 0px 0px;
+  padding-bottom: 20%;
+  position: sticky;
+  top: 40px;
+}
+
+.profile {
+  padding-top: 30%;
+  text-align: center;
+  margin-left: -90px;
+}
+
+.profile h4 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 39px;
+  color: white;
+  margin-bottom: 0;
+  margin-top: 5%;
+}
+
+.profile p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 39px;
+  color: white;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.profileinfo {
+  margin-top: 15%;
+  margin-left: 20%;
+}
+
+.dashlinks {
+
+  margin-top: 16%;
+  padding-top: 2%;
+}
+
+.dashlinks a {
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+
+.dashlinks a:hover{
+  text-decoration: none;
+  opacity: .6;
+  transition: all 0.2s ease-in;
+}
+
+.dashlinks i {
+  color: white;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 3px;
+  opacity: .8;
+}
+
+.dashlinks p {
+  font-family: Montserrat;
+  color: white;
+  font-size: 20px;
+  line-height: 39px;
+  letter-spacing: 0.05em;
+  font-weight: 200;
+  margin-left: 13px;
+}
+.dashright {
+  flex-grow: 1;
+  background-color: #E2ECEB;
+  padding-bottom: 20%;
+}
+
+.dashrightcontent {
+  padding-left: 6%;
+  padding-top: 8.5%;
+
+}
+
+.dashright-trips {
+  margin-top: 2.5%;
+}
+
+.dashright h1 {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 50px;
+  color: #424242;
+  margin-bottom: 8px;
+}
+
+.topcontent {
+  display: flex;
+}
+
+.bookings {
+  display: flex;
+}
+
+.bookings p {
+
+}
+
+.trips {
+  display: flex;
+}
+
+.settings {
+  display: flex;
+}
+
+.bottomstats {
+  display: flex;
+}
+
+.earnings {
+  background: white;
+  border-radius: 15px;
+  padding: 12px;
+  padding-left: 35px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin-top: 0;
+}
+
+.dash-block h1 {
+  margin-bottom: 7%;
+}
+
+.daily {
+  background: white;
+  border-radius: 15px;
+  padding: 12px;
+  padding-left: 35px;
+  padding-bottom: 10px;
+  padding-right: 90px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.bookingstat {
+  background: white;
+  border-radius: 15px;
+  padding: 10px 20px 10px 30px;
+  margin-left: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.bottomstats {
+  margin-top: 4%;
+}
+
+.request {
+  display: flex;
+}
+
+.message {
+  padding-left: 2%;
+}
+.message p {
+  color: white;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.message h5 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-weight: 200;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.request {
+  background: #49C396;
+  border-radius: 15px;
+  padding: 12px 20px 12px 30px;
+  margin-bottom: 3%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.requested {
+  margin-left: 8%;
+  margin-right: 7%;
+}
+
+.planecontainer {
+  background: #49C396;
+  color: white;
+  border-radius: 15px;
+  padding: 12px 20px 12px 30px;
+  display: flex;
+  margin-top: 0;
+  padding-top: 0;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.planecontainer:hover {
+  opacity: .8;
+  transition: all 0.2s ease-in;
+}
+.myplane {
+  padding-left: 2%;
+  margin-top: 3%;
+}
+
+.myplane h1 {
+  margin-bottom:: 10px;
+  padding-bottom: 0;
+}
+
+.planeleft h2 {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 26px;
+  margin-top: 20px;
+}
+
+.image-move {
+  margin-top: 20px
+}
+
+.planeleft h3 {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 47px;
+  margin-left: 5%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.planeleft p {
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 18px;
+  margin-top: -9px;
+  padding-top: 0;
+  margin-left: 6%;
+  color: white;
+  }
+
+.planeright p {
+  font-size: 20px;
+  line-height: 37px;
+  font-weight: 200;
+  letter-spacing: 0.05em;
+  margin-left: 90px;
+  margin-top: 10px;
+  color: white;
+}
+
+.color-change {
+  background-color: #435C59;
+}
+
+.planeimg {
+  width: 200px;
+}

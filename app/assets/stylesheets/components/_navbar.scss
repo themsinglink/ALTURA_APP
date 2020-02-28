@@ -19,6 +19,17 @@
   background-color: transparent;
 }
 
+.navbar-dark a{
+  color: #3D5653;
+  opacity: .8;
+  font-size: 20px;
+}
+
+.navbar-dark a:hover{
+  color: #3D5653;
+  opacity: .6;
+}
+
 .navbar a:hover {
   opacity: .7;
 }

@@ -12,7 +12,17 @@ class PlanesController < ApplicationController
   def show
     @plane = Plane.find(params[:id])
     @booking = Booking.new
+    # trying to integrate the map here, this is new
+    @planes = Plane.geocoded
+    @planes = @planes.where(id: params[:id])
+    @markers = @planes.map do |plane|
+      {
+        lat: plane.latitude,
+        lng: plane.longitude,
+        image_url: helpers.asset_url('plane.png')
+      }
   end
+end
 
   def new
     @plane = Plane.new
@@ -34,7 +44,4 @@ class PlanesController < ApplicationController
   def plane_params
     params.require(:plane).permit(:capacity, :location, :name, :rate, :description, :pilot_name, :photo)
   end
-
-
-
 end
