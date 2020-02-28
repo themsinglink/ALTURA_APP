@@ -1,22 +1,39 @@
 
+@import  "cards";
 
-.booking-form-container {
-  height: 100vh;
+.wholepagecontainer{
+  display:flex;
   background: $background;
-  width: 30%;
   margin: 0 auto;
+  justify-content: space-around;
+  padding: 50px 300px;
+
 }
 
-.message-input {
+.booking-form-container {
+  height: 60vh;
+  margin: 0;
+  width: 35%;
+  background-color: $light-gray;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.summarycontainer {
+  width: 35%;
+  background-color: $light-gray;
+  padding: 30px;
+  height: 60vh;
+  border-radius: 10px;
 
 }
 
 
 .messagecontainer {
-  width: 100%;
+  //width: 100%;
   margin: 0 auto;
-  background-color: $background
-  ;
+  background-color: $background;
   box-shadow: 0.879193px 0.879193px 3.51677px rgba(0, 0, 0, 0.25);
   padding-top: 40px;
   padding-bottom: 40px;
@@ -38,4 +55,30 @@
 
 .edit-booking {
   color: red;
+}
+
+h2 {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+form, img {
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+label{
+  padding-right: 10px;
+  width: 150px;
+  display: inline-block;
+}
+
+.input-group{
+  padding-top: 10px;
+}
+
+input {
+
+  float: right;
+  clear: both;
 }
