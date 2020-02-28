@@ -35,7 +35,8 @@ body {
   flex-direction: column;
   align-content: center;
   width: 80%;
-  margin-left: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .rightcontent {
@@ -59,13 +60,14 @@ body {
   width: 70%;
   background-color: #F4F4F4;
   border-radius: 10px;
-  margin-right: 10%;
+  margin-right: 5%;
 
 }
 
 .user {
   display: flex;
   align-items: center;
+  margin: auto;
 }
 
 .user p {
@@ -203,3 +205,32 @@ body {
   }
 }
 
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 40%;
+  background-color: #F4F4F4;
+  border-radius: 10px;
+  margin-left: 5%;
+}
+
+
+.userinfocontent {
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 89%;
+  margin: auto;
+  padding-right: 0px;
+}
+
+p {
+  font-weight: lighter;
+}
+
+img {
+  margin: auto;
+}

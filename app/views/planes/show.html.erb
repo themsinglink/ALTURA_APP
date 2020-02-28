@@ -13,7 +13,19 @@
     <span>per hour</span>
   </div>
 </div>
+
 <div class="content">
+
+  <div class="userinfo">
+    <div class="userinfocontent">
+       <div class="user">
+      <%= cl_image_tag @plane.user.photo.key, class: "avatar-large user-profile", alt: "alttext" %>
+    </div>
+    <h2>Meet <%= @plane.user.firstname %></h2>
+    <p>" <%= @plane.user.bio %> "</p>
+
+    </div>
+  </div>
 
 <div class="left">
   <h2>Premium Jet Features</h2>
@@ -39,6 +51,7 @@
     </div>
     </div>
   </div>
+  <br>
   <div class="description">
     <p><%= @plane.description %></p>
   </div>
@@ -46,6 +59,7 @@
 
 
 <% if current_user == @plane.user %>
+
 <div class="right">
   <div class="rightcontent">
     <h2>New bookings</h2>
