@@ -22,9 +22,9 @@
 
     <div class="profileinfo">
     <div class="profile">
-      <%= image_tag "laura.png", class: "avatar-large", alt: "alttext" %>
-      <h4>Katy Link</h4>
-      <p>Madrid, Spain</p>
+      <%= cl_image_tag current_user.photo.key, class: "avatar-large", alt: "alttext" %>
+      <h4><%= current_user.firstname%> <%= current_user.lastname %></h4>
+      <p><%= current_user.location %></p>
     </div>
     <div class="dashlinks">
       <div class="bookings">
