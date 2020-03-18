@@ -1,4 +1,3 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
 # ALTURA_APP
 
-small test
+Ruby on Rails web application to rent private jets on-demand.
